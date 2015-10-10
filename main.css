@@ -1,12 +1,11 @@
-html{
-  background-color: black;
-}
+
 body{
   width: 100%;
   height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/bg.jpg');
+  background-position:center top;
   margin: 0;
-  background:url("assets/bg.jpg");
-  opacity: .4;
+
 }
 
 
@@ -28,7 +27,7 @@ header{
   vertical-align: middle;
 }
 nav{
-  height: 2em;
+  height: 1.3em;
 }
 /* header*/
 header ul{
@@ -44,8 +43,8 @@ header li{
 .subscribe{
   width: 30%;
   height: 100%;
-  padding-left: 0%;
-  padding-top: 0%;
+  margin-left: 40%;
+
 
 
 }
@@ -58,7 +57,11 @@ header li{
 .subscribe p{
   height: 30%;r
   vertical-align: middle;
-  margin-top: 20%;
+  margin-bottom: 10%;
+  color:#FFFFFF ;
+  font-weight: bold;
+  font-size: 1.2em;
+  z-index: 1;
 }
 .subscribe p::after{
   content: "\2022";
@@ -93,33 +96,98 @@ nav li{
   display: inline-block;
   background: grey;
   color: white;
-  font-size: .8em;
+  font-size: .3em;
 }
 nav a{
   width: 100%;
-  height: 90%;
+  height: 95%;
   display: inline-block;
   background-color: red;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: bottom;
+
 
 }
 nav p{
-  width: 100%;
+  max-width: 70%;
   height: 100%;
   color:white;
   background-color: red;
   text-align: center;
   display: inline;
-  vertical-align: middle;
-  margin-top: 50%;
-  
+  vertical-align: bottom;
+  margin-top: 0%;
+
 }
 nav p::after{
   content: "-";
+  font-size: 3em;
+  margin-left: 10%;
 }
 nav p::before{
   content: "-";
+  font-size: 3em;
+  margin-right: 10%;
+}
+/*container 1*/
+.container.one{
+  height: 2em;
+
+}
+/*container 2*/
+.container.two{
+  display: inline-block;
+}
+.cols{
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  font-size: .7em;
+  text-align: center;
+
+}
+.cols a{
+  text-color:red;
+  text-decoration: none;
+}
+.cols a::after{
+  content: "]";
+  margin-left: 2%;
+}
+.cols a::before{
+  content: "[";
+  margin-right: 2%;
+}
+.cols p{
+ font-size: 1.4em;
+
+
+}
+.cols h2{
+  margin: 0;
+  padding: 0;
+  font-size: .2em;
+}
+
+
+/*third container*/
+.row-1 .pic-1{
+  background-image:url("assets/sk8er-4.png");
+}
+.row-1.pic-2{
+  background-image:url("assets/sk8er-3.png");
+}
+.row-2.pic-1{
+  background-image:url("assets/sk8er-1.png");
+}
+.col-2.pic-1{
+  background-image:url("assets/sk8er-2.png");
+
 }
 
 
