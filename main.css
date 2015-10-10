@@ -1,0 +1,131 @@
+html{
+  background-color: black;
+}
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background:url("assets/bg.jpg");
+  opacity: .4;
+}
+
+
+a{
+  text-decoration: none;
+}
+nav, section,header,footer{
+  width: 60%;
+  margin:auto;
+}
+h1,h2,p,a,li,img{
+  width: 100%;
+  height: 100%;
+}
+section{height: 70%;}
+
+header{
+  height: 3em;
+  vertical-align: middle;
+}
+nav{
+  height: 2em;
+}
+/* header*/
+header ul{
+  width: 20%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+header li{
+  width: 15%;
+  display: inline-block;
+}
+.subscribe{
+  width: 30%;
+  height: 100%;
+  padding-left: 0%;
+  padding-top: 0%;
+
+
+}
+.subscribe a{
+  color: white;
+  font-size:.6em;
+  float:right;
+  vertical-align: middle;
+}
+.subscribe p{
+  height: 30%;r
+  vertical-align: middle;
+  margin-top: 20%;
+}
+.subscribe p::after{
+  content: "\2022";
+  margin: 10%;
+  font-size: 1em;
+}
+.icons{
+  width: 30%;
+  height: 100%;
+  float:right;
+
+
+}
+header ul:nth-child(2):before{
+content: '\205E';
+color:white;
+display: inline-block;
+font-size: 1em;
+vertical-align: middle;
+
+}
+
+.icons li{
+  width: 15%;
+  background-color: grey;
+  height: auto;
+
+}
+/*navigation items*/
+nav li{
+  width: 22%;
+  display: inline-block;
+  background: grey;
+  color: white;
+  font-size: .8em;
+}
+nav a{
+  width: 100%;
+  height: 90%;
+  display: inline-block;
+  background-color: red;
+  text-align: center;
+  vertical-align: middle;
+
+}
+nav p{
+  width: 100%;
+  height: 100%;
+  color:white;
+  background-color: red;
+  text-align: center;
+  display: inline;
+  vertical-align: middle;
+  margin-top: 50%;
+  
+}
+nav p::after{
+  content: "-";
+}
+nav p::before{
+  content: "-";
+}
+
+
+/*first container*/
+
+#pic-animation{
+  width: 100%;
+  height: 100%;
+}
