@@ -136,10 +136,14 @@ nav p::before{
 }
 /*container 2*/
 .container.two{
+  display: flex;
+
+}
+.container div{
   display: inline-block;
 }
 .cols{
-  display: inline-block;
+  display: flex;
   width: 30%;
   height: auto;
   background-color: white;
@@ -164,36 +168,51 @@ nav p::before{
   margin-right: 2%;
 }
 .cols p{
- font-size: 1.4em;
+ font-size: .4em;
 
 
 }
-.cols h2{
-  margin: 0;
-  padding: 0;
-  font-size: .2em;
+.cols-3{
+  display: flex;
 }
-
-
 /*third container*/
-.row-1 .pic-1{
-  background-image:url("assets/sk8er-4.png");
-}
-.row-1.pic-2{
-  background-image:url("assets/sk8er-3.png");
-}
-.row-2.pic-1{
-  background-image:url("assets/sk8er-1.png");
-}
-.col-2.pic-1{
-  background-image:url("assets/sk8er-2.png");
 
+.three li{display: inline-block;width: 45%}
+.row-one div{display: inline-block; width: 45%;
 }
-
-
-/*first container*/
-
-#pic-animation{
+.three p{font-size: 1.5em;color: white;font-family: "Verdana",Times}
+.row-two{
   width: 100%;
-  height: 100%;
+}
+.row-one .pic-one{
+  background-image: url("assets/sk8er-4.png");
+} 
+.row-one .pic-two{
+  background-image: url("assets/sk8er-3.png");
+}
+.row-two .pic-one{
+  background-image: url("assets/sk8er-1.png");
+}
+.col-two .pic-one{
+  background-image: url("assets/sk8er-2.png");
+}
+/*container 4*/
+.four{
+  width: 100%;
+  height: 20%;
+  background: white;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.four div{
+  display: inline;
+  width: 9%;
+  margin: auto;
+}
+.four img{
+  height: inherit;
+  width: inherit;
+}
+.cols-mid:nth-child(1){
+  margin-left: 1%;
 }
