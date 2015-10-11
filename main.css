@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 body{
   width: 100%;
@@ -5,6 +6,7 @@ body{
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/bg.jpg');
   background-position:center top;
   margin: 0;
+
 
 }
 
@@ -23,7 +25,7 @@ h1,h2,p,a,li,img{
 section{height: 70%;}
 
 header{
-  height: 3em;
+  height: 5%s;
   vertical-align: middle;
 }
 nav{
@@ -31,8 +33,8 @@ nav{
 }
 /* header*/
 header ul{
-  width: 20%;
-  display: inline-block;
+  width: 10%;
+  display: inline-flex;
   margin: 0;
   padding: 0;
 }
@@ -43,7 +45,7 @@ header li{
 .subscribe{
   width: 30%;
   height: 100%;
-  margin-left: 40%;
+  margin-left: 30%;
 
 
 
@@ -71,7 +73,7 @@ header li{
 .icons{
   width: 30%;
   height: 100%;
-  float:right;
+
 
 
 }
@@ -130,10 +132,7 @@ nav p::before{
   margin-right: 10%;
 }
 /*container 1*/
-.container.one{
-  height: 2em;
 
-}
 /*container 2*/
 .container.two{
   display: flex;
@@ -177,24 +176,44 @@ nav p::before{
 }
 /*third container*/
 
-.three li{display: inline-block;width: 45%}
-.row-one div{display: inline-block; width: 45%;
+.three li{display: inline-block;width: 45%;height: 100%}
+.row-one div{display: inline-block;width: 47%;height: 100%;margin-bottom: 1%;
 }
-.three p{font-size: 1.5em;color: white;font-family: "Verdana",Times}
+.row-two div{width: 97%;}
+.three p{font-size: 1.3em;color: white;font-family: "Verdana",Times}
+
 .row-two{
   width: 100%;
 }
-.row-one .pic-one{
-  background-image: url("assets/sk8er-4.png");
-} 
-.row-one .pic-two{
-  background-image: url("assets/sk8er-3.png");
+.pic{
+  border: 2.5px solid white;
 }
-.row-two .pic-one{
+.three li:nth-child(1){
+  width: 60%;
+}
+.three li:nth-child(2){
+width: 30%;
+}
+.row-one .one{
+  background-image: url("assets/sk8er-4.png");
+  height: 8em;
+  background-position: right;
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+
+}
+.row-one .two{
+  background-image: url("assets/sk8er-3.png");
+  height: 8em;
+}
+.row-two .one{
   background-image: url("assets/sk8er-1.png");
 }
-.col-two .pic-one{
+.col-two .one{
   background-image: url("assets/sk8er-2.png");
+  height: 100%;
+  background-position: 20% 20%;
+  background-size: 150%;
 }
 /*container 4*/
 .four{
@@ -215,4 +234,139 @@ nav p::before{
 }
 .cols-mid:nth-child(1){
   margin-left: 1%;
+}
+/*container five*/
+.five{
+  background: white;
+}
+.five div{
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+}
+.five .col-1{
+  width: 45%%;
+}
+.five .col-2{
+  width: 45%;
+}
+.five ul{
+  width: 50%;
+  height: 10%;
+  margin-right: 20%;
+}
+.five ul a{
+  display: inline;
+  width: 5%;
+}
+.five img{
+  width:20%;
+}
+form{
+  width: 100%;
+  height: 3em;
+}
+textarea{
+  width: 100%;
+border-top: .2em solid black;
+border-left: .2em solid black;
+opacity: .5;
+}
+input{
+  background-color: red;
+  font-size: 1em;
+  color: white;
+  border: none;
+  width: 50% ;
+  float: right;
+  margin-top: 20%;
+}
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin:5% 0 10% 0;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block ; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all 2s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: -9%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
 }
