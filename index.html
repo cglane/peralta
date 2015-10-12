@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+    <script src="validation.js"></script>
   </head>
+
   <body>
 
     <header>
@@ -92,6 +94,14 @@
       <div class="container three">
         <li>  <div class="col col-one">
                 <div class="rows row-one">
+                  <div class="skateboarder2">
+                    <svg height="50" width="200" >
+  <polygon points="0,0 170,0 200, 25 170,50 0,50" style="stroke:red; fill:red;" />
+</svg>
+                  <p>
+                  SKATEBOARDERS
+                  </p>
+                  </div>
                     <div class="pic one">
                       <p>
                         LANCE MOUNTAIN
@@ -150,18 +160,20 @@
           </ul>
         </div>
         <div class="columns col-2">
-          <form class="/form" action="Name" method="post">
-            <textarea name="name">NAME </textarea>
-            <textarea name="email">EMAIL</textarea>
-            <textarea name="message" rows="8" cols="40">YOUR MESSAGE</textarea>
-            <input type="submit" name="name" value="Submit">
-          </form>
+
+          <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+            <textarea name="name" rows="8" cols="40">Name</textarea>
+            <textarea name="email" rows="8" cols="40">EMAIL</textarea>
+            <textarea name="name" rows="8" cols="40">YOUR MESSAGE</textarea>
+            <input type="text" name="fname">
+            <input class="input"type="submit" value="Submit">
+    </form>
         </div>
 
       </div>
     </section>
     <aside>
-      <img src="assets/sk8er-2.png" alt="" />
+
     </aside>
 
   </body>

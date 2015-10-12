@@ -154,6 +154,9 @@ nav p::before{
   text-align: center;
 
 }
+.col-3{
+
+}
 .cols a{
   text-color:red;
   text-decoration: none;
@@ -193,28 +196,40 @@ nav p::before{
 }
 .three li:nth-child(2){
 width: 30%;
+height: 200px;
+position: absolute;
 }
 .row-one .one{
   background-image: url("assets/sk8er-4.png");
   height: 8em;
-  background-position: right;
-  background-size: 90% auto;
+  background-size: 200% auto;
   background-repeat: no-repeat;
+  background-position: 90% 50%;
 
 }
 .row-one .two{
   background-image: url("assets/sk8er-3.png");
   height: 8em;
+  background-size: 170%;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+
 }
 .row-two .one{
   background-image: url("assets/sk8er-1.png");
+
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
+
 .col-two .one{
   background-image: url("assets/sk8er-2.png");
-  height: 100%;
-  background-position: 20% 20%;
-  background-size: 150%;
+  height: 12.5em;
+  background-size: 190%;
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
 }
+
 /*container 4*/
 .four{
   width: 100%;
@@ -267,12 +282,24 @@ form{
   height: 3em;
 }
 textarea{
-  width: 100%;
+width: 100%;
 border-top: .2em solid black;
 border-left: .2em solid black;
 opacity: .5;
+font-size: 1em;
+margin: 5% 0 5% 0;
+}
+textarea:nth-child(1){
+  height: 20px;
+}
+textarea:nth-child(2){
+height: 20px;
 }
 input{
+  opacity: 0;
+}
+.input{
+  opacity: 1;
   background-color: red;
   font-size: 1em;
   color: white;
@@ -369,4 +396,22 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: rgba(0, 0, 0, 0.8);
+}
+.skateboarder2{
+  position: absolute;
+  left: 40px;
+  margin: 0;
+  width: 200px;;
+
+}
+.skateboarder2 svg polygon{
+  background-color: red;
+}
+.skateboarder2 p{
+  position: relative;
+  bottom: 60px;
+}
+.icons a:hover{
+  background-color: black;
+  opacity: .5;
 }
